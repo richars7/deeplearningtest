@@ -175,13 +175,13 @@ class Ball2(Widget):
 class Ball3(Widget):
     pass
 
-def serve_car(self):
+def Game(Widget):
     car= ObjectProperty(None)
     ball1= ObjectProperty(None)
     ball2= ObjectProperty(None)
     ball3 = ObjectProperty(None)
     
-    def serve_Car(self):
+    def serve_car(self):
         self.car.center = self.center
         self.car.velocity = Vector(6,0)
         
