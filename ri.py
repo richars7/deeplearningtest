@@ -175,11 +175,21 @@ class Ball2(Widget):
 class Ball3(Widget):
     pass
 
-def serve_car(self):
-    car= ObjectProperty(None)
-    ball1= ObjectProperty(None)
-    ball2= ObjectProperty(None)
+
+# Creates the game class
+class Game(Widget):
+
+    car = ObjectProperty(None)
+
+    ball1 = ObjectProperty(None)
+    ball2 = ObjectProperty(None)
     ball3 = ObjectProperty(None)
+
+    def serve_car(self):
+        car= ObjectProperty(None)
+        ball1= ObjectProperty(None)
+        ball2= ObjectProperty(None)
+        ball3 = ObjectProperty(None)
     
     def serve_Car(self):
         self.car.center = self.center
